@@ -1,4 +1,7 @@
-
+local Anh_Gai_Alimi = {"rbxassetid://6942501524","rbxassetid://7903531742","rbxassetid://7903522083","rbxassetid://6409799523","rbxassetid://8881175113",
+		"rbxassetid://7584008919","rbxassetid://6271530098","rbxassetid://7388383866","rbxassetid://9327507243","rbxassetid://7962732035","rbxassetid://6842416695","rbxassetid://6576447146",
+		"rbxassetid://10171317457","rbxassetid://10171317457","rbxassetid://8598068647","rbxassetid://8192162908","rbxassetid://8677814109","rbxassetid://4597457883"
+	}
 local Loader = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local exe = Instance.new("TextLabel")
@@ -48,7 +51,7 @@ backround.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 backround.BorderSizePixel = 0
 backround.Position = UDim2.new(-0.00031067431, 0, 0.973583341, 0)
 backround.Size = UDim2.new(1, 0, 13.4285717, 0)
-backround.Image = "00"
+backround.Image = Anh_Gai_Alimi[math.random(1,#Anh_Gai_Alimi)]
 
 
 
@@ -81,9 +84,9 @@ Load.TextScaled = true
 Load.TextSize = 45.000
 Load.TextWrapped = true
 Load.MouseButton1Down:Connect(function()
-	
+	 Loader:Destroy()
 		loadstring(game:HttpGet(("https://raw.githubusercontent.com/Des5dw/ars2/main/asfkjzkxljhvusaiuvhisuhv"), true))()
-     Loader:Destroy()
+     
 end)
 
 UITextSizeConstraint_3.Parent = Load
